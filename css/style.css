@@ -3,6 +3,10 @@
   --secondary-black: #111;
 }
 
-.bg-dark-light {
-  background-color: #111827;
+.bg-dark {
+  background-color: var(--primary-black) !important;
+}
+
+.img-fluid {
+  height: 100%;
 }
