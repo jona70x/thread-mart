@@ -3,6 +3,7 @@
 :root {
   --primary-black: #000;
   --secondary-black: #52525b;
+  --light-gray: #737373;
 }
 
 .bg-dark {
@@ -51,4 +52,13 @@
   background-color: var(--secondary-black);
   color: white;
   transition: all 0.3s;
+}
+
+footer {
+  color: var(--light-gray);
+}
+
+a:link,
+a:visited {
+  color: white;
 }
