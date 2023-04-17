@@ -11,7 +11,6 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-    <!-- Own stylesheet -->
     <!-- Boostrap JS CDN -->
     <script
       defer
@@ -19,6 +18,7 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <!-- Own stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Own js script file -->
     <script defer src="scripts/app.js"></script>
@@ -28,7 +28,7 @@
     <header>
       <!-- Boostrap Navigation Bar -->
       <nav
-        class="navbar navbar-expand-lg bg-dark navbar-light fs-5"
+        class="navbar navbar-expand-md bg-dark navbar-light fs-5"
         data-bs-theme="dark"
       >
         <div class="container-fluid mx-3 justify-content-between">
@@ -58,7 +58,7 @@
             class="collapse navbar-collapse flex-grow-0"
             id="navbarSupportedContent"
           >
-            <ul class="navbar-nav mb-2 mb-lg-0">
+            <ul class="navbar-nav mb-2 mb-md-0 mx-5">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
@@ -95,9 +95,9 @@
       <!-- Product menu -->
       <!-- Grid container to create a Gallery showcasing 3 products -->
       <section class="container-fluid bg-dark p-0">
-        <div class="d-none d-lg-flex row g-0">
+        <div class="d-none d-md-flex row g-0">
           <div
-            class="col col-lg-6 position-relative overflow-hidden hover-container"
+            class="col col-md-6 position-relative overflow-hidden hover-container"
           >
             <!-- Price title and tag  -->
             <div
@@ -120,8 +120,8 @@
           </div>
 
           <!-- Displaying images in 2D Grid for large breakpoint -->
-          <div class="d-none d-lg-block col-lg-6 overflow-hidden">
-            <div class="row d-none d-lg-block">
+          <div class="d-none d-md-block col-md-6 overflow-hidden">
+            <div class="row d-none d-md-block">
               <div class="col position-relative">
                 <!-- Price title and tag  -->
                 <div
@@ -168,7 +168,7 @@
         </div>
 
         <!-- Displays images in column for sm and md screens -->
-        <div class="row d-lg-none g-0">
+        <div class="row d-md-none g-0">
           <div
             class="col-12 text-center my-3 position-relative overflow-hidden"
           >
@@ -234,6 +234,119 @@
               src="images/blue-t-shirt.jpg"
               alt="blue-t-shirt"
             />
+          </div>
+        </div>
+      </section>
+
+      <!-- Hero section -->
+      <section class="container-fluid bg-dark text-light vh-30 p-5">
+        <div class="row">
+          <div
+            class="col-12 col-lg-6 d-flex flex-column text-center justify-content-center"
+          >
+            <h2 class="text-light tex-center mb-5 monoton-title display-2">
+              Dress to impress
+            </h2>
+            <p class="text-light mx-auto fs-3 mb-5 lh-lg">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
+              voluptatem quibusdam excepturi quis, sit repellendus veritatis
+              error ipsam nemo, similique consequuntur debitis hic adipisci
+              atque rerum sequi. Perspiciatis, voluptate voluptatum.
+            </p>
+            <!-- <p class="text-light fs-4 lh-lg">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
+              voluptatem quibusdam excepturi quis, sit repellendus veritatis
+              error ipsam nemo.
+            </p> -->
+          </div>
+          <div class="col-12 col-lg-6 overflow-hidden text-center my-auto">
+            <img src="images/woman.jpg" class="custom-sizing" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Web Features -->
+      <section class="container-fluid my-4">
+        <div class="row mx-auto">
+          <!-- Feature card -->
+          <div class="col-6 col-lg-3">
+            <!-- Boostrap Card -->
+            <div
+              class="mx-auto card p-2 border border-3 mb-2"
+              style="width: 15rem"
+            >
+              <img
+                src="images/icons/coupon.png"
+                class="card-img-top"
+                alt="sale discounts tag"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title text-center monoton-title">
+                  Enjoy our discounts
+                </h5>
+                <a href="#" class="btn btn-primary mb-0">Subscribe now</a>
+              </div>
+            </div>
+          </div>
+          <!-- Feature card 2 -->
+          <div class="col-6 col-lg-3">
+            <!-- Boostrap Card -->
+            <div
+              class="mx-auto card p-2 border border-3 mb-2"
+              style="width: 15rem"
+            >
+              <img
+                src="images/icons/credit-cards.png"
+                class="card-img-top"
+                alt="Credit Cards"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title text-center monoton-title">
+                  International Cards
+                </h5>
+                <a href="#" class="btn btn-primary mb-0">Check now</a>
+              </div>
+            </div>
+          </div>
+          <!-- Feature card 3 -->
+          <div class="col-6 col-lg-3">
+            <!-- Boostrap Card -->
+            <div
+              class="mx-auto card p-2 border border-3 mb-2"
+              style="width: 15rem"
+            >
+              <img
+                src="images/icons/customer-service.png"
+                class="card-img-top"
+                alt="Customer Service Image"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title text-center monoton-title">
+                  Customer Support
+                </h5>
+                <a href="#" class="btn btn-primary mb-0">Contact Support</a>
+              </div>
+            </div>
+          </div>
+          <!-- Feature card 4 -->
+          <div class="col-6 col-lg-3">
+            <!-- Boostrap Card -->
+            <div
+              class="mx-auto card p-2 border border-3 mb-2"
+              style="width: 15rem"
+            >
+              <img
+                src="images/icons/shopping-bag.png"
+                class="card-img-top"
+                alt="shopping bag"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title text-center monoton-title">
+                  International Delivery
+                </h5>
+                <a href="#" class="btn btn-primary mb-0">Check countries</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
