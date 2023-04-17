@@ -31,7 +31,7 @@
         class="navbar navbar-expand-lg bg-dark navbar-light fs-5"
         data-bs-theme="dark"
       >
-        <div class="container justify-content-between">
+        <div class="container-fluid mx-3 justify-content-between">
           <a class="navbar-brand" href="index.html">
             <img
               src="images/logo.png"
@@ -94,33 +94,146 @@
     <main>
       <!-- Product menu -->
       <!-- Grid container to create a Gallery showcasing 3 products -->
-      <section class="container-fluid bg-dark">
-        <div class="row g-0">
-          <div class="col-6">
+      <section class="container-fluid bg-dark p-0">
+        <div class="d-none d-lg-flex row g-0">
+          <div
+            class="col col-lg-6 position-relative overflow-hidden hover-container"
+          >
+            <!-- Price title and tag  -->
+            <div
+              class="float-start text-light position-absolute top-0 start-0 z-2"
+            >
+              <h2 class="bg-dark w-100 p-4 fw-bold">
+                <span>Kiikii Tee </span>
+              </h2>
+              <div class="n-margin">
+                <h4 class="bg-dark w-50 p-4">
+                  <span class="fw-bold">$25</span>
+                </h4>
+              </div>
+            </div>
             <img
-              class="img-fluid"
+              class="img-fluid hover-img"
               src="images/kiikii-shirt.jpg"
-              alt="Kiikii tshitt"
+              alt="Kiikii t-shirt"
             />
           </div>
 
-          <div class="col-6">
-            <div class="row">
-              <div class="col-12">
+          <!-- Displaying images in 2D Grid for large breakpoint -->
+          <div class="d-none d-lg-block col-lg-6 overflow-hidden">
+            <div class="row d-none d-lg-block">
+              <div class="col position-relative">
+                <!-- Price title and tag  -->
+                <div
+                  class="float-start text-light position-absolute top-0 start-2 text-center z-2"
+                >
+                  <h2 class="bg-dark w-100 p-4 fw-bold">
+                    <span>Racoon Tee</span>
+                  </h2>
+                  <div class="n-margin">
+                    <h4 class="bg-dark w-50 py-4">
+                      <span class="fw-bold">$25</span>
+                    </h4>
+                  </div>
+                </div>
                 <img
-                  class="img-fluid"
+                  class="img-fluid hover-img"
                   src="images/childs-raccoon-tee.jpg"
                   alt="Racoon tee"
                 />
               </div>
-              <div class="col-12">
+              <div class="col position-relative overflow-hidden">
+                <!-- Price title and tag -->
+                <div
+                  class="float-start text-light position-absolute top-70 start-2 z-2"
+                >
+                  <h2 class="bg-dark w-100 p-4 fw-bold">
+                    <span>Plain Tee</span>
+                  </h2>
+                  <div class="n-margin">
+                    <h4 class="bg-dark w-50 p-4">
+                      <span class="fw-bold">$20</span>
+                    </h4>
+                  </div>
+                </div>
+
                 <img
-                  class="img-fluid"
+                  class="img-fluid hover-img"
                   src="images/blue-t-shirt.jpg"
                   alt="blue-t-shirt"
                 />
               </div>
             </div>
+          </div>
+        </div>
+
+        <!-- Displays images in column for sm and md screens -->
+        <div class="row d-lg-none g-0">
+          <div
+            class="col-12 text-center my-3 position-relative overflow-hidden"
+          >
+            <!-- Price title and tag  -->
+            <div
+              class="float-start text-light position-absolute top-0 start-0 z-2"
+            >
+              <h2 class="bg-dark w-100 p-4 fw-bold">
+                <span>Kiikii Tee </span>
+              </h2>
+              <div class="n-margin">
+                <h4 class="bg-dark w-50 p-4">
+                  <span class="fw-bold">$25</span>
+                </h4>
+              </div>
+            </div>
+            <img
+              class="img-fluid hover-img"
+              src="images/kiikii-shirt.jpg"
+              alt="Kiikii t-shirt"
+            />
+          </div>
+          <div
+            class="col-12 text-center mb-3 position-relative overflow-hidden"
+          >
+            <!-- Price title and tag  -->
+            <div
+              class="float-start text-light position-absolute top-0 start-2 text-center z-2"
+            >
+              <h2 class="bg-dark w-100 p-4 fw-bold">
+                <span>Racoon Tee</span>
+              </h2>
+              <div class="n-margin">
+                <h4 class="bg-dark w-50 py-4">
+                  <span class="fw-bold">$25</span>
+                </h4>
+              </div>
+            </div>
+            <img
+              class="img-fluid hover-img"
+              src="images/childs-raccoon-tee.jpg"
+              alt="Racoon tee"
+            />
+          </div>
+          <div
+            class="col-12 text-center mb-3 position-relative overflow-hidden"
+          >
+            <!-- Price title and tag -->
+            <div
+              class="float-start text-light position-absolute top-70 start-2 z-2"
+            >
+              <h2 class="bg-dark w-100 p-4 fw-bold">
+                <span>Plain Tee</span>
+              </h2>
+              <div class="n-margin">
+                <h4 class="bg-dark w-50 p-4">
+                  <span class="fw-bold">$20</span>
+                </h4>
+              </div>
+            </div>
+            <img
+              class="img-fluid hover-img"
+              src="images/blue-t-shirt.jpg"
+              alt="blue-t-shirt"
+            />
           </div>
         </div>
       </section>

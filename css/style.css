@@ -8,5 +8,26 @@
 }
 
 .img-fluid {
-  height: 100%;
+  height: 100% !important;
+}
+
+@media screen and (max-width: 992px) {
+  .img-fluid {
+    height: 40em !important;
+    width: 60em;
+  }
+}
+
+.n-margin {
+  margin-top: -10px;
+}
+
+.hover-img:hover {
+  transform: scale(1.1);
+  transition: all 0.4s ease-in;
+  cursor: pointer;
+}
+.hover-img:not(:hover) {
+  transform: scale(1);
+  transition: all 0.4s ease-out;
 }
