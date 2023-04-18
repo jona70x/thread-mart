@@ -6,6 +6,15 @@
   --light-gray: #737373;
 }
 
+.bg-gray {
+  background: rgb(87, 94, 97);
+  background: radial-gradient(
+    circle,
+    rgba(87, 94, 97, 1) 0%,
+    rgba(20, 20, 20, 1) 100%
+  );
+}
+
 .bg-dark {
   background-color: var(--primary-black) !important;
 }
@@ -70,8 +79,11 @@ a:visited {
   width: 100%;
   z-index: 2;
   opacity: 0.3;
-  overflow: hidden;
-  object-fit: cover;
+  /* object-fit: cover; */
+}
+
+video {
+  min-width: 2500px !important;
 }
 
 .height-full {
