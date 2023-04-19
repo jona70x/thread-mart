@@ -5,6 +5,23 @@
   --secondary-black: #52525b;
   --light-gray: #737373;
   --light-gray-2: #f1f3f5;
+  --purple: #f81ce5;
+  --pink-light: #ff379c;
+  --violet: #7928ca;
+  --violet-dark: #4c2889;
+  --primary-blue: #0070f3;
+  --cyan: #22b8cf;
+  --green: #37b679;
+}
+
+.bg-violet {
+  background-color: var(--violet) !important;
+}
+.bg-cyan {
+  background-color: var(--cyan) !important;
+}
+.bg-green {
+  background-color: var(--green) !important;
 }
 
 .bg-gray {
@@ -112,4 +129,10 @@ input::placeholder {
 
 .light-gray-hover:hover {
   background-color: #18181b !important;
+}
+
+/* Price tag hover animation */
+
+.tag-container:hover h4 {
+  background-color: var(--cyan);
 }

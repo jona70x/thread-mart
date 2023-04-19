@@ -106,14 +106,14 @@
     </header>
 
     <!-- Main Content -->
-    <main>
+    <main class="container-fluid mx-0">
       <!-- Search Options Menu -->
       <section class="mx-5 my-4">
         <!-- Search input -->
-        <div class="input-group mb-3">
+        <div class="input-group mb-3 m-0">
           <input
             type="text"
-            class="form-control py-2 px-4 bg-dark text-white fs-5"
+            class="form-control px-4 py-2 bg-dark text-white fs-5"
             placeholder="Search for products..."
             aria-label="Recipient's username"
             aria-describedby="button-addon2"
@@ -126,8 +126,8 @@
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </div>
-        <!-- Dropdrown menu -->
-        <div class="dropdown w-100 mb-5">
+        <!-- Dropdrown categories menu -->
+        <div class="dropdown mb-3">
           <button
             class="btn btn-secondary dropdown-toggle w-100 text-start py-2 px-4 fs-5 text-light-gray bg-dark"
             type="button"
@@ -136,7 +136,7 @@
           >
             All categories
           </button>
-          <ul class="dropdown-menu fs-6 bg-dark w-100 text-white">
+          <ul class="dropdown-menu w-100 fs-6 bg-dark text-white">
             <li>
               <a
                 class="dropdown-item text-white light-gray-hover mx-1 p-2"
@@ -161,9 +161,44 @@
           </ul>
         </div>
 
+        <!-- Dropdrown categories menu -->
+        <div class="dropdown mb-5">
+          <button
+            class="btn btn-secondary dropdown-toggle w-100 text-start py-2 px-4 fs-5 text-light-gray bg-dark"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Relevance
+          </button>
+          <ul class="dropdown-menu w-100 fs-6 bg-dark text-white">
+            <li>
+              <a
+                class="dropdown-item text-white light-gray-hover mx-1 p-2"
+                href="#"
+                >Trending</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item text-white light-gray-hover mx-1 p-2"
+                href="#"
+                >Price: Low to high</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item text-white light-gray-hover mx-1 p-2"
+                href="#"
+                >Price: High to low</a
+              >
+            </li>
+          </ul>
+        </div>
+
         <!-- Products -->
         <div class="row justify-content-center mb-2">
-          <!-- Product Card 1 -->
+          <!-- Product Card 1 Kiki Tee -->
           <div
             class="col-4 mb-5 card position-relative overflow-hidden p-0 bg-gray me-4"
             style="width: 28rem; height: 30rem"
@@ -173,7 +208,7 @@
               class="float-start text-light position-absolute top-0 start-2 overflow-hidden text-center z-2"
             >
               <h4 class="bg-dark w-100 p-3 fw-bold">
-                <span>Racoon Tee</span>
+                <span>Kiikii T-shirt</span>
               </h4>
               <div class="n-margin">
                 <h4 class="bg-dark w-50 py-2">
@@ -181,12 +216,12 @@
                 </h4>
               </div>
             </div>
-            <div class="overflow-hidden">
+            <div class="overflow-hidden bg-gray">
               <img
                 style="height: 25rem"
                 class="card-img-top hover-img"
-                src="images/childs-raccoon-tee.jpg"
-                alt="Racoon tee"
+                src="images/kiikii-shirt.jpg"
+                alt="Kiikii T-shirt"
               />
             </div>
             <!-- Stars / Button box -->
@@ -211,7 +246,7 @@
               </div>
             </div>
           </div>
-          <!-- Product Card 2 -->
+          <!-- Product Card 2 Racoon -->
           <div
             class="col-4 mb-5 card position-relative overflow-hidden p-0 bg-gray me-4"
             style="width: 28rem; height: 30rem"
@@ -221,7 +256,7 @@
               class="float-start text-light position-absolute top-0 start-2 overflow-hidden text-center z-2"
             >
               <h4 class="bg-dark w-100 p-3 fw-bold">
-                <span>Racoon Tee</span>
+                <span>Racoon T-shirt</span>
               </h4>
               <div class="n-margin">
                 <h4 class="bg-dark w-50 py-2">
@@ -234,7 +269,7 @@
                 style="height: 25rem"
                 class="card-img-top hover-img"
                 src="images/childs-raccoon-tee.jpg"
-                alt="Racoon tee"
+                alt="Racoon T-shirt"
               />
             </div>
             <!-- Stars / Button box -->
@@ -259,7 +294,7 @@
               </div>
             </div>
           </div>
-          <!-- Product Card 3 -->
+          <!-- Product Card 3 White tee -->
           <div
             class="col-4 mb-5 me-4 card position-relative overflow-hidden p-0 bg-gray"
             style="width: 28rem; height: 30rem"
@@ -269,7 +304,7 @@
               class="float-start text-light position-absolute top-0 start-2 overflow-hidden text-center z-2"
             >
               <h4 class="bg-dark w-100 p-3 fw-bold">
-                <span>Racoon Tee</span>
+                <span>White T-shirt</span>
               </h4>
               <div class="n-margin">
                 <h4 class="bg-dark w-50 py-2">
@@ -281,7 +316,7 @@
               <img
                 style="height: 25rem"
                 class="card-img-top hover-img"
-                src="images/childs-raccoon-tee.jpg"
+                src="images/white-tee-with-pocket.png"
                 alt="Racoon tee"
               />
             </div>
@@ -307,7 +342,7 @@
               </div>
             </div>
           </div>
-          <!-- Product Card 1 -->
+          <!-- Product Card 4 Red t-shirt -->
           <div
             class="col-4 mb-5 card position-relative overflow-hidden p-0 bg-gray me-4"
             style="width: 28rem; height: 30rem"
@@ -317,11 +352,11 @@
               class="float-start text-light position-absolute top-0 start-2 overflow-hidden text-center z-2"
             >
               <h4 class="bg-dark w-100 p-3 fw-bold">
-                <span>Racoon Tee</span>
+                <span>Red T-shirt</span>
               </h4>
               <div class="n-margin">
                 <h4 class="bg-dark w-50 py-2">
-                  <span class="fs-5">$25</span>
+                  <span class="fs-5">$20</span>
                 </h4>
               </div>
             </div>
@@ -329,8 +364,8 @@
               <img
                 style="height: 25rem"
                 class="card-img-top hover-img"
-                src="images/childs-raccoon-tee.jpg"
-                alt="Racoon tee"
+                src="images/red-t-shirt.png"
+                alt="Red T-shirt"
               />
             </div>
             <!-- Stars / Button box -->
@@ -355,7 +390,7 @@
               </div>
             </div>
           </div>
-          <!-- Product Card 2 -->
+          <!-- Product Card 5 Cobalt t-shirt -->
           <div
             class="col-4 mb-5 card position-relative overflow-hidden p-0 bg-gray me-4"
             style="width: 28rem; height: 30rem"
@@ -365,7 +400,7 @@
               class="float-start text-light position-absolute top-0 start-2 overflow-hidden text-center z-2"
             >
               <h4 class="bg-dark w-100 p-3 fw-bold">
-                <span>Racoon Tee</span>
+                <span>Cobalt T-shirt</span>
               </h4>
               <div class="n-margin">
                 <h4 class="bg-dark w-50 py-2">
@@ -377,8 +412,8 @@
               <img
                 style="height: 25rem"
                 class="card-img-top hover-img"
-                src="images/childs-raccoon-tee.jpg"
-                alt="Racoon tee"
+                src="images/cobalt-blue-t-shirt.png"
+                alt="Cobalt T-shirt"
               />
             </div>
             <!-- Stars / Button box -->
@@ -403,7 +438,7 @@
               </div>
             </div>
           </div>
-          <!-- Product Card 3 -->
+          <!-- Product Card 6 Purple t-shirt-->
           <div
             class="col-4 mb-5 me-4 card position-relative overflow-hidden p-0 bg-gray"
             style="width: 28rem; height: 30rem"
@@ -413,7 +448,7 @@
               class="float-start text-light position-absolute top-0 start-2 overflow-hidden text-center z-2"
             >
               <h4 class="bg-dark w-100 p-3 fw-bold">
-                <span>Racoon Tee</span>
+                <span>Purple T-shirt</span>
               </h4>
               <div class="n-margin">
                 <h4 class="bg-dark w-50 py-2">
@@ -425,8 +460,8 @@
               <img
                 style="height: 25rem"
                 class="card-img-top hover-img"
-                src="images/childs-raccoon-tee.jpg"
-                alt="Racoon tee"
+                src="images/purple-t-shirt.png"
+                alt="Purple T-shirt"
               />
             </div>
             <!-- Stars / Button box -->
