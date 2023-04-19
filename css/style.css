@@ -4,6 +4,7 @@
   --primary-black: #000;
   --secondary-black: #52525b;
   --light-gray: #737373;
+  --light-gray-2: #f1f3f5;
 }
 
 .bg-gray {
@@ -58,8 +59,9 @@
   color: white;
   border: #000;
 }
-.btn-primary:hover {
-  background-color: var(--secondary-black);
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: var(--secondary-black) !important;
   color: white;
   transition: all 0.3s;
 }
@@ -88,4 +90,26 @@ video {
 
 .height-full {
   height: 1000px;
+}
+
+.text-light-gray {
+  color: var(--light-gray) !important;
+}
+.border-dark-subtle {
+  border-color: var(--light-gray) !important;
+}
+
+input,
+select {
+  background-color: var(--primary-black) !important;
+  border-color: var(--light-gray) !important;
+  color: white !important;
+}
+
+input::placeholder {
+  color: var(--light-gray) !important;
+}
+
+.light-gray-hover:hover {
+  background-color: #18181b !important;
 }
