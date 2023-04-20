@@ -14,16 +14,6 @@
   --green: #37b679;
 }
 
-.bg-violet {
-  background-color: var(--violet) !important;
-}
-.bg-cyan {
-  background-color: var(--cyan) !important;
-}
-.bg-green {
-  background-color: var(--green) !important;
-}
-
 .bg-gray {
   background: rgb(87, 94, 97);
   background: radial-gradient(
@@ -130,8 +120,23 @@ input::placeholder {
   background-color: #18181b !important;
 }
 
-/* Price tag hover animation */
+.nav-item:hover {
+  background: #27272a !important;
+  border-radius: 100px;
+  transition: all 0.3s ease-in-out;
+}
 
-.tag-container:hover h4 {
-  background-color: var(--cyan);
+.nav-item:not(hover) {
+  background: var(--primary-black) !important;
+
+  border-radius: 100px;
+  transition: all 0.3s ease-in-out;
+}
+
+.active {
+  background: #27272a !important;
+  border-radius: 100px;
+}
+.dropdown-item.active {
+  background: var(--light-gray) !important;
 }

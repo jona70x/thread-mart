@@ -22,16 +22,22 @@
     <link rel="stylesheet" href="css/style.css" />
     <!-- Own js script file -->
     <script defer src="scripts/app.js"></script>
+    <!-- Font Awesome -->
+    <script
+      defer
+      src="https://kit.fontawesome.com/abc530113c.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body class="bg-dark d-flex flex-column justify-content-between">
     <!-- Header and Navigation Bar -->
     <header>
       <!-- Boostrap Navigation Bar -->
       <nav
-        class="navbar navbar-expand-md bg-dark navbar-light fs-5"
+        class="navbar navbar-expand-md bg-dark navbar-light fs-4 border-bottom border-2 border-gray"
         data-bs-theme="dark"
       >
-        <div class="container-fluid justify-content-between mx-5 p-0">
+        <div class="container-fluid justify-content-between mx-3 mx-lg-5 p-0">
           <a class="navbar-brand" href="index.html">
             <img
               src="images/logo.png"
@@ -58,27 +64,38 @@
             class="collapse navbar-collapse flex-grow-0"
             id="navbarSupportedContent"
           >
-            <ul class="navbar-nav mb-2 mb-md-0">
-              <li class="nav-item">
+            <ul class="navbar-nav mx-3 mb-2 mb-md-0 gap-2 gap-md-4">
+              <li class="nav-item me-1 p-1">
                 <a class="nav-link" aria-current="page" href="index.html"
                   >Home</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="checkout.html">Checkout</a>
+
+              <li class="nav-item me-1 p-1">
+                <a class="nav-link" href="products.html">Products</a>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item me-1 p-1">
+                <a class="nav-link" href="checkout.html">
+                  <span><i class="fa-solid fa-cart-shopping"></i></span>
+                  Cart</a
+                >
+              </li>
+              <li class="nav-item me-1 p-1 dropdown d-none d-md-block me-3">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle rounded-pill border border-2 border-white p-2"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  User Area
+                  <span class="me-2">
+                    <span class="fs-5"><i class="fa-solid fa-user"></i></span
+                  ></span>
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="login.html">Log in</a></li>
+                  <li>
+                    <a class="dropdown-item" href="login.html">Log in</a>
+                  </li>
                   <li>
                     <a class="dropdown-item active" href="register.html"
                       >Register</a
@@ -86,9 +103,16 @@
                   </li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Log out</a>
                   </li>
                 </ul>
+              </li>
+              <hr class="text-white" />
+              <li class="nav-item me-1 p-1 d-md-none">
+                <a class="nav-link" href="login.html">Log in</a>
+              </li>
+              <li class="nav-item me-1 p-1 d-md-none">
+                <a class="nav-link" href="register.html">Register</a>
               </li>
             </ul>
           </div>
@@ -105,7 +129,7 @@
           </div>
           <p class="fs-2 fs-md-1 mb-5">
             For a faster checkout, easy access to previous orders, and the
-            ability to create and address book and store settings. Register
+            ability to create an address book and store settings. Register
             below.
           </p>
           <!-- Registration form -->
@@ -153,7 +177,7 @@
                   aria-describedby="inputGroupPrepend"
                   required
                 />
-                <div class="invalid-feedback">Please choose a username.</div>
+                <div class="invalid-feedback">Please choose an username.</div>
               </div>
             </div>
             <!-- Email -->

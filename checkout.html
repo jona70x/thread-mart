@@ -22,16 +22,22 @@
     <link rel="stylesheet" href="css/style.css" />
     <!-- Own js script file -->
     <script defer src="scripts/app.js"></script>
+    <!-- Font Awesome -->
+    <script
+      defer
+      src="https://kit.fontawesome.com/abc530113c.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body class="bg-dark d-flex flex-column justify-content-between">
     <!-- Header and Navigation Bar -->
     <header>
       <!-- Boostrap Navigation Bar -->
       <nav
-        class="navbar navbar-expand-md bg-dark navbar-light fs-5"
+        class="navbar navbar-expand-md bg-dark navbar-light fs-4 border-bottom border-2 border-gray"
         data-bs-theme="dark"
       >
-        <div class="container-fluid justify-content-between mx-5 p-0">
+        <div class="container-fluid justify-content-between mx-3 mx-lg-5 p-0">
           <a class="navbar-brand" href="index.html">
             <img
               src="images/logo.png"
@@ -58,37 +64,53 @@
             class="collapse navbar-collapse flex-grow-0"
             id="navbarSupportedContent"
           >
-            <ul class="navbar-nav mb-2 mb-md-0">
-              <li class="nav-item">
+            <ul class="navbar-nav mx-3 mb-2 mb-md-0 gap-2 gap-md-4">
+              <li class="nav-item me-1 p-1">
                 <a class="nav-link" aria-current="page" href="index.html"
                   >Home</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="checkout.html">Checkout</a>
+
+              <li class="nav-item me-1 p-1">
+                <a class="nav-link" href="products.html">Products</a>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item me-1 p-1">
+                <a class="nav-link active" href="checkout.html">
+                  <span><i class="fa-solid fa-cart-shopping"></i></span>
+                  Cart</a
+                >
+              </li>
+              <li class="nav-item me-1 p-1 dropdown d-none d-md-block me-3">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle rounded-pill border border-2 border-white p-2"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  User Area
+                  <span class="me-2">
+                    <span class="fs-5"><i class="fa-solid fa-user"></i></span
+                  ></span>
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="login.html">Log in</a></li>
                   <li>
-                    <a class="dropdown-item active" href="register.html"
-                      >Register</a
-                    >
+                    <a class="dropdown-item" href="login.html">Log in</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="register.html">Register</a>
                   </li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Log out</a>
                   </li>
                 </ul>
+              </li>
+              <hr class="text-white" />
+              <li class="nav-item me-1 p-1 d-md-none">
+                <a class="nav-link" href="login.html">Log in</a>
+              </li>
+              <li class="nav-item me-1 p-1 d-md-none">
+                <a class="nav-link" href="register.html">Register</a>
               </li>
             </ul>
           </div>
@@ -98,13 +120,13 @@
 
     <!-- Main Content -->
     <main>
-      <section class="container-flex overflow-hidden mx-5">
+      <section class="overflow-hidden container-fluid mx-md-0">
         <div
           class="row row-cols-2 mx-2 p-0 g-lg-5 g-3 mt-3 justify-content-between align-items-md-center"
         >
           <!-- Checkout form -->
 
-          <div class="col-12 col-lg-6 bg-gray rounded-5 text-white p-5 mb-5">
+          <div class="col-12 col-xl-6 bg-gray rounded-5 text-white p-5 mb-5">
             <h4 class="mb-3 monoton-title text-center display-6 mb-4">
               Your <span class="ms-3"> Information</span>
             </h4>
@@ -170,39 +192,22 @@
                   </div>
                 </div>
 
-                <div class="col-md-5">
-                  <div class="row">
-                    <div class="col">
-                      <label for="country" class="form-label">Country</label>
-                      <select class="p-3 form-select" id="country" required>
-                        <option value="">Choose...</option>
-                        <option>Belgium</option>
-                        <option>France</option>
-                        <option>Germany</option>
-                        <option>United Kingdom</option>
-                        <option>United States</option>
-                      </select>
-                      <div class="invalid-feedback">
-                        Please select a valid country.
-                      </div>
-                    </div>
-                    <div class="col-auto align-self-end">
-                      <span
-                        class="d-inline-block"
-                        tabindex="0"
-                        data-bs-toggle="popover"
-                        data-bs-trigger="hover focus"
-                        data-bs-content="If your country isn't listed here, we're currently not shipping to your country. Contact us via the contact form and we'll see how we can help you."
-                      >
-                        <i
-                          class="bi bi-info-circle text-primary"
-                          role="img"
-                          aria-label="Info"
-                          style="font-size: 1.5rem"
-                        ></i>
-                      </span>
+                <div class="col-md-4">
+                  <div class="col">
+                    <label for="country" class="form-label">Country</label>
+                    <select class="p-3 form-select" id="country" required>
+                      <option value="">Choose...</option>
+                      <option>Belgium</option>
+                      <option>France</option>
+                      <option>Germany</option>
+                      <option>United Kingdom</option>
+                      <option>United States</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select a valid country.
                     </div>
                   </div>
+                  <div class="col-auto align-self-end"></div>
                 </div>
 
                 <div class="col-md-4">
@@ -228,7 +233,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-4">
                   <label for="zip" class="form-label">Zip</label>
                   <input
                     type="text"
@@ -362,7 +367,7 @@
           <!--  -->
           <!--  -->
           <!-- Product Table -->
-          <div class="col-12 col-lg-6">
+          <div class="col-12 col-xl-6">
             <!-- Div for text -->
             <div class="border py-5 border-2 rounded-5 bg-gray">
               <h2 class="text-white monoton-title text-center mb-5 display-5">
@@ -370,7 +375,7 @@
               </h2>
 
               <table
-                class="table table-sm text-center text-white table-borderless fs-6"
+                class="table table-sm text-center text-white table-borderless fs-5"
               >
                 <thead>
                   <tr>
