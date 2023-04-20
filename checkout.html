@@ -98,16 +98,18 @@
 
     <!-- Main Content -->
     <main>
-      <section class="container overflow-hidden">
+      <section class="container-flex overflow-hidden mx-5">
         <div
-          class="row row-cols-2 mx-2 p-0 g-5 justify-content-between align-items-md-center"
+          class="row row-cols-2 mx-2 p-0 g-lg-5 g-3 mt-3 justify-content-between align-items-md-center"
         >
           <!-- Checkout form -->
 
-          <div class="col-12 col-lg-6 bg-gray text-white p-5 mb-5">
-            <h4 class="mb-3">Your address</h4>
+          <div class="col-12 col-lg-6 bg-gray rounded-5 text-white p-5 mb-5">
+            <h4 class="mb-3 monoton-title text-center display-6 mb-4">
+              Your <span class="ms-3"> Information</span>
+            </h4>
             <form
-              class="needs-validation"
+              class="needs-validation fs-4"
               action="done.html"
               method="get"
               novalidate
@@ -117,10 +119,9 @@
                   <label for="firstName" class="form-label">First name</label>
                   <input
                     type="text"
-                    class="form-control"
+                    class="p-3 form-control"
                     id="firstName"
-                    placeholder=""
-                    value=""
+                    placeholder="John"
                     required
                   />
                   <div class="invalid-feedback">
@@ -132,10 +133,9 @@
                   <label for="lastName" class="form-label">Last name</label>
                   <input
                     type="text"
-                    class="form-control"
+                    class="p-3 form-control"
                     id="lastName"
-                    placeholder=""
-                    value=""
+                    placeholder="Doe"
                     required
                   />
                   <div class="invalid-feedback">
@@ -144,31 +144,12 @@
                 </div>
 
                 <div class="col-12">
-                  <label for="username" class="form-label">Username</label>
-                  <div class="input-group has-validation">
-                    <span class="input-group-text">@</span>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="username"
-                      placeholder="Username"
-                      required
-                    />
-                    <div class="invalid-feedback">
-                      Your username is required.
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12">
-                  <label for="email" class="form-label"
-                    >Email <span class="text-muted">(Optional)</span></label
-                  >
+                  <label for="email" class="form-label">Email</label>
                   <input
                     type="email"
-                    class="form-control"
+                    class="p-3 form-control"
                     id="email"
-                    placeholder="you@example.com"
+                    placeholder="johndoe@example.com"
                   />
                   <div class="invalid-feedback">
                     Please enter a valid email address for shipping updates.
@@ -179,7 +160,7 @@
                   <label for="address" class="form-label">Address</label>
                   <input
                     type="text"
-                    class="form-control"
+                    class="p-3 form-control"
                     id="address"
                     placeholder="1234 Main St"
                     required
@@ -189,23 +170,11 @@
                   </div>
                 </div>
 
-                <div class="col-12">
-                  <label for="address2" class="form-label"
-                    >Address 2 <span class="text-muted">(Optional)</span></label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="address2"
-                    placeholder="Apartment or suite"
-                  />
-                </div>
-
                 <div class="col-md-5">
                   <div class="row">
                     <div class="col">
                       <label for="country" class="form-label">Country</label>
-                      <select class="form-select" id="country" required>
+                      <select class="p-3 form-select" id="country" required>
                         <option value="">Choose...</option>
                         <option>Belgium</option>
                         <option>France</option>
@@ -238,7 +207,7 @@
 
                 <div class="col-md-4">
                   <label for="state" class="form-label">State</label>
-                  <select class="form-select" id="state" required>
+                  <select class="p-3 form-select" id="state" required>
                     <option value="">Choose...</option>
                     <option>Not applicable</option>
                     <option>Alabama</option>
@@ -263,7 +232,7 @@
                   <label for="zip" class="form-label">Zip</label>
                   <input
                     type="text"
-                    class="form-control"
+                    class="p-3 form-control"
                     id="zip"
                     placeholder=""
                     required
@@ -314,16 +283,7 @@
                     >Credit card</label
                   >
                 </div>
-                <div class="form-check">
-                  <input
-                    id="debit"
-                    name="paymentMethod"
-                    type="radio"
-                    class="form-check-input"
-                    required
-                  />
-                  <label class="form-check-label" for="debit">Debit card</label>
-                </div>
+
                 <div class="form-check">
                   <input
                     id="paypal"
@@ -337,25 +297,25 @@
               </div>
 
               <div class="row gy-3">
-                <div class="form-floating col-md-6">
+                <div class="col-md-6">
                   <input
                     type="text"
-                    class="form-control"
+                    class="p-3 form-control"
                     id="cc-name"
-                    placeholder="Jane Doe"
+                    placeholder="John Doe"
                     required
                   />
-                  <label for="cc-name">Name on card</label>
-                  <small class="text-muted"
+
+                  <small class="text-white"
                     >Full name as displayed on card</small
                   >
                   <div class="invalid-feedback">Name on card is required</div>
                 </div>
 
-                <div class="form-floating col-md-6">
+                <div class="col-md-6">
                   <input
                     type="text"
-                    class="form-control"
+                    class="p-3 form-control"
                     id="cc-number"
                     placeholder="xxx-xxxxx-xx"
                     required
@@ -366,10 +326,10 @@
                   </div>
                 </div>
 
-                <div class="form-floating col-md-3">
+                <div class="col-md-3">
                   <input
                     type="text"
-                    class="form-control"
+                    class="p-3 form-control"
                     id="cc-expiration"
                     placeholder="12/23"
                     required
@@ -378,10 +338,10 @@
                   <div class="invalid-feedback">Expiration date required</div>
                 </div>
 
-                <div class="form-floating col-md-3">
+                <div class="col-md-3">
                   <input
                     type="text"
-                    class="form-control"
+                    class="p-3 form-control"
                     id="cc-cvv"
                     placeholder="123"
                     required
@@ -404,92 +364,98 @@
           <!-- Product Table -->
           <div class="col-12 col-lg-6">
             <!-- Div for text -->
-            <div>
-              <h2 class="text-white monoton-title text-center mb-5 display-3">
-                Checkout
+            <div class="border py-5 border-2 rounded-5 bg-gray">
+              <h2 class="text-white monoton-title text-center mb-5 display-5">
+                Checkout <span class="ms-3">Items </span>
               </h2>
-            </div>
 
-            <table
-              class="table table-sm text-center text-white table-borderless m-0 p-0 fs-6"
-            >
-              <thead>
-                <tr>
-                  <th>Product</th>
-                  <th>Price</th>
-                  <th>Quantity</th>
-                  <th>Total</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td
-                    class="d-flex flex-column align-items-center justify-content-center"
-                  >
-                    <div class="card bg-gray" style="width: 10rem">
-                      <img
-                        src="images/kiikii-shirt.jpg"
-                        class="card-img-top"
-                        alt="Kiikii T-shirt"
-                        style="height: 13rem"
-                      />
-                    </div>
-                    <div class="card-text text-center mx-0">Kiikii T-shirt</div>
-                  </td>
-                  <td>$25.00</td>
-                  <td>2</td>
-                  <td>$50.00</td>
-                </tr>
-                <tr>
-                  <td
-                    class="d-flex flex-column align-items-center justify-content-center"
-                  >
-                    <div class="card bg-gray" style="width: 10rem">
-                      <img
-                        src="images/purple-t-shirt.png"
-                        class="card-img-top"
-                        alt="Purple T-shirt"
-                        style="height: 13rem"
-                      />
-                    </div>
-                    <div class="card-text text-center mx-0">Purple T-shirt</div>
-                  </td>
-                  <td>$20.00</td>
-                  <td class="">1</td>
-                  <td>$20.00</td>
-                </tr>
-                <tr>
-                  <td
-                    class="d-flex flex-column align-items-center justify-content-center"
-                  >
-                    <div class="card bg-gray" style="width: 10rem">
-                      <img
-                        src="images/red-t-shirt.png"
-                        class="card-img-top"
-                        alt="Product Image"
-                        style="height: 13rem"
-                      />
-                    </div>
-                    <div class="card-text text-center mx-0">Kiikii T-shirt</div>
-                  </td>
-                  <td>$20.00</td>
-                  <td>1</td>
-                  <td>$20.00</td>
-                </tr>
-                <tr>
-                  <td colspan="3" class="text-end">Subtotal</td>
-                  <td>$90.00</td>
-                </tr>
-                <tr>
-                  <td colspan="3" class="text-end">Shipping</td>
-                  <td>$5.00</td>
-                </tr>
-                <tr>
-                  <td colspan="3" class="text-end">Total</td>
-                  <td>$95.00</td>
-                </tr>
-              </tbody>
-            </table>
+              <table
+                class="table table-sm text-center text-white table-borderless fs-6"
+              >
+                <thead>
+                  <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td
+                      class="d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <div class="card bg-gray" style="width: 5rem">
+                        <img
+                          src="images/kiikii-shirt.jpg"
+                          class="card-img-top"
+                          alt="Kiikii T-shirt"
+                          style="height: 5rem"
+                        />
+                      </div>
+                      <div class="card-text text-center mx-0">
+                        Kiikii T-shirt
+                      </div>
+                    </td>
+                    <td>$25.00</td>
+                    <td>2</td>
+                    <td>$50.00</td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <div class="card bg-gray" style="width: 5rem">
+                        <img
+                          src="images/purple-t-shirt.png"
+                          class="card-img-top"
+                          alt="Purple T-shirt"
+                          style="height: 5rem"
+                        />
+                      </div>
+                      <div class="card-text text-center mx-0">
+                        Purple T-shirt
+                      </div>
+                    </td>
+                    <td>$20.00</td>
+                    <td class="">1</td>
+                    <td>$20.00</td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <div class="card bg-gray" style="width: 5rem">
+                        <img
+                          src="images/red-t-shirt.png"
+                          class="card-img-top"
+                          alt="Product Image"
+                          style="height: 5rem"
+                        />
+                      </div>
+                      <div class="card-text text-center mx-0">
+                        Kiikii T-shirt
+                      </div>
+                    </td>
+                    <td>$20.00</td>
+                    <td>1</td>
+                    <td>$20.00</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="text-end">Subtotal</td>
+                    <td>$90.00</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="text-end">Shipping</td>
+                    <td>$5.00</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="text-end">Total</td>
+                    <td>$95.00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </section>
