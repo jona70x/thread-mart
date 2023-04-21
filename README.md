@@ -23,7 +23,11 @@ Open index.html in a web browser.
 The project is structured as follows:
 
 index.html: This is the home page of the website.
+
 products.html: This page displays the products using boostrap cards.
+
 checkout.html: This page contains information about the order and allows the user to complete their purchase.
+
 login.html: This page contains a background video and a form that allows. It uses the boostrap validation features.
+
 register.html: This page contains a registration form that uses the boostrap validation classes.## Color Reference
