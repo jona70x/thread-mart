@@ -31,10 +31,11 @@
   </head>
   <body class="bg-dark d-flex flex-column justify-content-between">
     <!-- Header and Navigation Bar -->
+    <!-- Header and Navigation Bar -->
     <header>
       <!-- Boostrap Navigation Bar -->
       <nav
-        class="navbar navbar-expand-md bg-dark navbar-light fs-4 border-bottom border-2 border-gray"
+        class="navbar navbar-expand-md bg-dark navbar-light fs-5 border-bottom border-2 border-gray"
         data-bs-theme="dark"
       >
         <div class="container-fluid justify-content-between mx-3 mx-lg-5 p-0">
@@ -93,9 +94,7 @@
                   ></span>
                 </a>
                 <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="login.html">Log in</a>
-                  </li>
+                  <li><a class="dropdown-item" href="login.html">Log in</a></li>
                   <li>
                     <a class="dropdown-item" href="register.html">Register</a>
                   </li>
@@ -122,26 +121,26 @@
     <main>
       <section class="overflow-hidden container-fluid mx-md-0">
         <div
-          class="row row-cols-2 mx-2 p-0 g-lg-5 g-3 mt-3 justify-content-between align-items-md-center"
+          class="row row-cols-2 mx-2 p-2 g-lg-4 g-2 mt-3 justify-content-between align-items-md-center"
         >
           <!-- Checkout form -->
 
-          <div class="col-12 col-xl-6 bg-gray rounded-5 text-white p-5 mb-5">
+          <div class="col-12 col-xl-6 bg-gray rounded-5 text-white p-3 mb-5">
             <h4 class="mb-3 monoton-title text-center display-6 mb-4">
               Your <span class="ms-3"> Information</span>
             </h4>
             <form
-              class="needs-validation fs-4"
+              class="needs-validation fs-6"
               action="done.html"
               method="get"
               novalidate
             >
-              <div class="row g-3">
+              <div class="row">
                 <div class="col-sm-6">
                   <label for="firstName" class="form-label">First name</label>
                   <input
                     type="text"
-                    class="p-3 form-control"
+                    class="p-1 form-control"
                     id="firstName"
                     placeholder="John"
                     required
@@ -155,7 +154,7 @@
                   <label for="lastName" class="form-label">Last name</label>
                   <input
                     type="text"
-                    class="p-3 form-control"
+                    class="p-1 form-control"
                     id="lastName"
                     placeholder="Doe"
                     required
@@ -169,7 +168,7 @@
                   <label for="email" class="form-label">Email</label>
                   <input
                     type="email"
-                    class="p-3 form-control"
+                    class="p-1 form-control"
                     id="email"
                     placeholder="johndoe@example.com"
                   />
@@ -182,7 +181,7 @@
                   <label for="address" class="form-label">Address</label>
                   <input
                     type="text"
-                    class="p-3 form-control"
+                    class="p-1 form-control"
                     id="address"
                     placeholder="1234 Main St"
                     required
@@ -195,7 +194,7 @@
                 <div class="col-md-4">
                   <div class="col">
                     <label for="country" class="form-label">Country</label>
-                    <select class="p-3 form-select" id="country" required>
+                    <select class="p-1 form-select" id="country" required>
                       <option value="">Choose...</option>
                       <option>Belgium</option>
                       <option>France</option>
@@ -212,7 +211,7 @@
 
                 <div class="col-md-4">
                   <label for="state" class="form-label">State</label>
-                  <select class="p-3 form-select" id="state" required>
+                  <select class="p-1 form-select" id="state" required>
                     <option value="">Choose...</option>
                     <option>Not applicable</option>
                     <option>Alabama</option>
@@ -237,7 +236,7 @@
                   <label for="zip" class="form-label">Zip</label>
                   <input
                     type="text"
-                    class="p-3 form-control"
+                    class="p-1 form-control"
                     id="zip"
                     placeholder=""
                     required
@@ -305,7 +304,7 @@
                 <div class="col-md-6">
                   <input
                     type="text"
-                    class="p-3 form-control"
+                    class="p-1 form-control"
                     id="cc-name"
                     placeholder="John Doe"
                     required
@@ -320,7 +319,7 @@
                 <div class="col-md-6">
                   <input
                     type="text"
-                    class="p-3 form-control"
+                    class="p-1 form-control"
                     id="cc-number"
                     placeholder="xxx-xxxxx-xx"
                     required
@@ -334,7 +333,7 @@
                 <div class="col-md-3">
                   <input
                     type="text"
-                    class="p-3 form-control"
+                    class="p-1 form-control"
                     id="cc-expiration"
                     placeholder="12/23"
                     required
@@ -346,7 +345,7 @@
                 <div class="col-md-3">
                   <input
                     type="text"
-                    class="p-3 form-control"
+                    class="p-1 form-control"
                     id="cc-cvv"
                     placeholder="123"
                     required
@@ -356,7 +355,7 @@
                 </div>
               </div>
 
-              <hr class="my-4" />
+              <hr class="my-2" />
 
               <button class="w-100 btn btn-primary btn-lg" type="submit">
                 Place order
@@ -369,13 +368,13 @@
           <!-- Product Table -->
           <div class="col-12 col-xl-6">
             <!-- Div for text -->
-            <div class="border py-5 border-2 rounded-5 bg-gray">
+            <div class="border py-2 border-2 rounded-5 bg-gray">
               <h2 class="text-white monoton-title text-center mb-5 display-5">
                 Checkout <span class="ms-3">Items </span>
               </h2>
 
               <table
-                class="table table-sm text-center text-white table-borderless fs-5"
+                class="table table-sm text-center text-white table-borderless"
               >
                 <thead>
                   <tr>

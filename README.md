@@ -30,4 +30,4 @@ checkout.html: This page contains information about the order and allows the use
 
 login.html: This page contains a background video and a form that allows. It uses the boostrap validation features.
 
-register.html: This page contains a registration form that uses the boostrap validation classes.## Color Reference
+register.html: This page contains a registration form that uses the boostrap validation classes.
