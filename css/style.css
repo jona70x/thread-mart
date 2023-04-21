@@ -5,13 +5,6 @@
   --secondary-black: #52525b;
   --light-gray: #737373;
   --light-gray-2: #f1f3f5;
-  --purple: #f81ce5;
-  --pink-light: #ff379c;
-  --violet: #7928ca;
-  --violet-dark: #4c2889;
-  --primary-blue: #0070f3;
-  --cyan: #22b8cf;
-  --green: #37b679;
 }
 
 .bg-gray {
@@ -87,7 +80,6 @@ a:visited {
   width: 100%;
   z-index: 2;
   opacity: 0.3;
-  /* object-fit: cover; */
 }
 
 video {
