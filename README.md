@@ -2,6 +2,10 @@
 
 This is an e-commerce project called Thread Mart, developed using HTML, CSS, and Bootstrap. The project is designed to be fully responsive, meaning it will work seamlessly across devices of different sizes, from desktops to mobile phones.
 
+## Live Project
+
+You can find the project live here: https://thread-mart.vercel.app/
+
 ## Technology Used
 
 The project uses the following technologies:
