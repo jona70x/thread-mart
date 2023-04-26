@@ -48,7 +48,7 @@ register.html: This page contains a registration form that uses the boostrap val
 
 ## Responsiveness in action
 
-One piece of this project that I am proud of is the grid with images in index.html. For small screen sizes, the images are displayed in a columns instead of a grid. 
+One piece of this project that I am proud of is the grid with images in index.html. For small screen sizes, the images are displayed in columns instead of a grid. 
 
 ![Screenshot 2023-04-21 at 2 01 15 AM](https://user-images.githubusercontent.com/101604637/233594578-b17b911d-251b-410a-8fd8-e4aff728394c.png)
 
